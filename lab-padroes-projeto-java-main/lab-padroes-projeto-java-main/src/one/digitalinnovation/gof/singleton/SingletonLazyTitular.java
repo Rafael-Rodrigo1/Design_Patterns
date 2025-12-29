@@ -7,17 +7,17 @@ package one.digitalinnovation.gof.singleton;
  * 
  * @author falvojr
  */
-public class SingletonLazyHolder {
+public class SingletonLazyTitular {
 
 	private static class InstanceHolder {
-		public static SingletonLazyHolder instancia = new SingletonLazyHolder();
+		public static SingletonLazyTitular instancia = new SingletonLazyTitular();
 	}
 	
-	private SingletonLazyHolder() {
+	private SingletonLazyTitular() {
 		super();
 	}
 	
-	public static SingletonLazyHolder getInstancia() {
+	public static SingletonLazyTitular getInstancia() {
 		return InstanceHolder.instancia;
 	}
 }

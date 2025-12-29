@@ -1,9 +1,9 @@
 package one.digitalinnovation.gof;
 
 import one.digitalinnovation.gof.facade.Facade;
-import one.digitalinnovation.gof.singleton.SingletonEager;
-import one.digitalinnovation.gof.singleton.SingletonLazy;
-import one.digitalinnovation.gof.singleton.SingletonLazyHolder;
+import one.digitalinnovation.gof.singleton.Singleton_Apressado;
+import one.digitalinnovation.gof.singleton.SingletonPreguiçoso;
+import one.digitalinnovation.gof.singleton.SingletonLazyTitular;
 import one.digitalinnovation.gof.strategy.Comportamento;
 import one.digitalinnovation.gof.strategy.ComportamentoAgressivo;
 import one.digitalinnovation.gof.strategy.ComportamentoDefensivo;
@@ -16,19 +16,19 @@ public class Test {
 		
 		// Singleton
 		
-		SingletonLazy lazy = SingletonLazy.getInstancia();
+		SingletonPreguiçoso lazy = SingletonPreguiçoso.getInstancia();
 		System.out.println(lazy);
-		lazy = SingletonLazy.getInstancia();
+		lazy = SingletonPreguiçoso.getInstancia();
 		System.out.println(lazy);
 		
-		SingletonEager eager = SingletonEager.getInstancia();
+		Singleton_Apressado eager = Singleton_Apressado.getInstancia();
 		System.out.println(eager);
-		eager = SingletonEager.getInstancia();
+		eager = Singleton_Apressado.getInstancia();
 		System.out.println(eager);
 		
-		SingletonLazyHolder lazyHolder = SingletonLazyHolder.getInstancia();
+		SingletonLazyTitular lazyHolder = SingletonLazyTitular.getInstancia();
 		System.out.println(lazyHolder);
-		lazyHolder = SingletonLazyHolder.getInstancia();
+		lazyHolder = SingletonLazyTitular.getInstancia();
 		System.out.println(lazyHolder);
 		
 		// Strategy
